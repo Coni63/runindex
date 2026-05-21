@@ -1,0 +1,23 @@
+name: Validate data.json
+
+on:
+  push:
+    paths:
+      - data.json
+      - schema.json
+      - .github/workflows/validate.yml
+  pull_request:
+    paths:
+      - data.json
+      - schema.json
+      - .github/workflows/validate.yml
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cardinalby/schema-validator-action@v3
+        with:
+          file: data.json
+          schema: schema.json

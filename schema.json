@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunIndex data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["site", "categories"],
+  "properties": {
+    "site": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "tagline", "intro"],
+      "properties": {
+        "title":   { "type": "string", "minLength": 1 },
+        "tagline": { "type": "string", "minLength": 1 },
+        "intro":   { "type": "string", "minLength": 1 },
+        "repoUrl": { "type": "string", "format": "uri", "pattern": "^https?://" }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/category" }
+    }
+  },
+  "$defs": {
+    "kebab": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "category": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "icon", "description", "sites"],
+      "properties": {
+        "id":          { "$ref": "#/$defs/kebab" },
+        "name":        { "type": "string", "minLength": 1 },
+        "icon":        { "type": "string", "minLength": 1 },
+        "description": { "type": "string", "minLength": 1 },
+        "sites": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/site" }
+        }
+      }
+    },
+    "site": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "url", "description", "tags"],
+      "properties": {
+        "id":          { "$ref": "#/$defs/kebab" },
+        "name":        { "type": "string", "minLength": 1 },
+        "url":         { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "description": { "type": "string", "minLength": 1 },
+        "tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/kebab" }
+        }
+      }
+    }
+  }
+}
