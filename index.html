@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RunIndex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand">
+        <span class="brand-mark">🏃</span>
+        <span class="brand-name">RunIndex</span>
+      </a>
+      <input id="search" type="search" placeholder="Rechercher un site, une marque, un tag..." autocomplete="off" />
+    </div>
+  </header>
+
+  <main id="app" class="container">
+    <p class="loading">Chargement…</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>POC — données dans <code>data.json</code>. Suggestions bienvenues.</p>
+    </div>
+  </footer>
+
+  <template id="tpl-home">
+    <section class="hero">
+      <h1 data-bind="title"></h1>
+      <p class="tagline" data-bind="tagline"></p>
+      <p class="intro" data-bind="intro"></p>
+    </section>
+    <section class="categories-layout" data-bind="categories"></section>
+  </template>
+
+  <template id="tpl-category-panel">
+    <section class="category-panel">
+      <header class="panel-header">
+        <span class="category-icon" data-bind="icon"></span>
+        <div>
+          <h2><a data-bind="anchorHref"><span data-bind="name"></span></a></h2>
+          <p data-bind="description"></p>
+        </div>
+        <span class="category-count" data-bind="count"></span>
+      </header>
+      <ol class="site-list compact" data-bind="sites"></ol>
+    </section>
+  </template>
+
+  <template id="tpl-category">
+    <nav class="breadcrumb">
+      <a href="#/">Accueil</a> <span>›</span> <span data-bind="name"></span>
+    </nav>
+    <section class="category-header">
+      <span class="category-icon big" data-bind="icon"></span>
+      <div>
+        <h1 data-bind="name"></h1>
+        <p data-bind="description"></p>
+      </div>
+    </section>
+    <ol class="site-list" data-bind="sites"></ol>
+  </template>
+
+  <template id="tpl-site-row">
+    <li class="site-row">
+      <span class="rank" data-bind="rank"></span>
+      <div class="site-main">
+        <a class="site-name" data-bind="detailHref"><span data-bind="name"></span></a>
+        <p class="site-desc" data-bind="description"></p>
+        <div class="tags" data-bind="tags"></div>
+      </div>
+      <a class="site-visit" target="_blank" rel="noopener" data-bind="url">Visiter ↗</a>
+    </li>
+  </template>
+
+  <template id="tpl-site-detail">
+    <nav class="breadcrumb">
+      <a href="#/">Accueil</a> <span>›</span>
+      <a data-bind="categoryHref"><span data-bind="categoryName"></span></a>
+      <span>›</span> <span data-bind="name"></span>
+    </nav>
+    <article class="site-detail">
+      <header>
+        <h1 data-bind="name"></h1>
+        <a class="site-visit big" target="_blank" rel="noopener" data-bind="url">Visiter le site ↗</a>
+      </header>
+      <p class="lead" data-bind="description"></p>
+      <div class="tags" data-bind="tags"></div>
+      <div class="site-meta">
+        <span>Catégorie : <a data-bind="categoryHref"><span data-bind="categoryName"></span></a></span>
+        <span>Classement : <strong data-bind="rank"></strong></span>
+      </div>
+    </article>
+  </template>
+
+  <template id="tpl-search-results">
+    <section>
+      <h1>Résultats</h1>
+      <p data-bind="summary"></p>
+      <ol class="site-list" data-bind="results"></ol>
+    </section>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

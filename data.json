@@ -1,0 +1,446 @@
+{
+  "site": {
+    "title": "RunIndex",
+    "tagline": "L'annuaire du coureur et du traileur",
+    "intro": "Une sélection rangée des meilleurs sites pour la course à pied et le trail : matériel, marques, calendriers, chronométrage, médias, communauté."
+  },
+  "categories": [
+    {
+      "id": "materiel",
+      "name": "Vendeurs de matériel",
+      "icon": "🎒",
+      "description": "Magasins généralistes et spécialisés pour s'équiper (chaussures, textile, sacs, accessoires).",
+      "sites": [
+        {
+          "id": "i-run",
+          "name": "i-Run",
+          "url": "https://www.i-run.fr/",
+          "description": "Spécialiste running/trail français, très bon catalogue chaussures et textile, livraison rapide.",
+          "tags": ["specialiste", "francais", "livraison-rapide"]
+        },
+        {
+          "id": "snowleader",
+          "name": "Snowleader",
+          "url": "https://www.snowleader.com/",
+          "description": "Outdoor pointu, bon stock trail (chaussures, sacs, textile technique).",
+          "tags": ["outdoor", "francais"]
+        },
+        {
+          "id": "decathlon",
+          "name": "Decathlon",
+          "url": "https://www.decathlon.fr/",
+          "description": "Le généraliste incontournable. Gamme Kiprun/Evadict très correcte pour démarrer.",
+          "tags": ["generaliste", "francais", "entree-de-gamme"]
+        },
+        {
+          "id": "alltricks",
+          "name": "Alltricks",
+          "url": "https://www.alltricks.fr/",
+          "description": "Multi-sport outdoor, bons prix en promo sur les chaussures de trail.",
+          "tags": ["multi-sport", "promos"]
+        },
+        {
+          "id": "trail-session-shop",
+          "name": "Trail Session Shop",
+          "url": "https://www.trail-session-shop.com/",
+          "description": "Boutique 100% trail tenue par des passionnés.",
+          "tags": ["specialiste", "trail"]
+        }
+      ]
+    },
+    {
+      "id": "marques",
+      "name": "Marques",
+      "icon": "👟",
+      "description": "Sites officiels des principales marques de chaussures et textile running/trail.",
+      "sites": [
+        {
+          "id": "salomon",
+          "name": "Salomon",
+          "url": "https://www.salomon.com/",
+          "description": "Référence trail : S/Lab, Speedcross, Sense Ride, Genesis...",
+          "tags": ["trail", "francais"]
+        },
+        {
+          "id": "hoka",
+          "name": "HOKA",
+          "url": "https://www.hoka.com/",
+          "description": "Chaussures à amorti maximaliste, très populaires sur route et trail (Speedgoat, Mafate).",
+          "tags": ["amorti", "route", "trail"]
+        },
+        {
+          "id": "on",
+          "name": "On Running",
+          "url": "https://www.on.com/",
+          "description": "Marque suisse, technologie CloudTec. Cloudmonster, Cloudultra côté trail.",
+          "tags": ["route", "trail", "suisse"]
+        },
+        {
+          "id": "nike",
+          "name": "Nike Running",
+          "url": "https://www.nike.com/fr/running",
+          "description": "Vaporfly, Alphafly, Pegasus... la référence sur les chaussures carbone route.",
+          "tags": ["route", "carbone"]
+        },
+        {
+          "id": "asics",
+          "name": "ASICS",
+          "url": "https://www.asics.com/",
+          "description": "Gel-Nimbus, Novablast, Metaspeed. Très solide sur le confort route.",
+          "tags": ["route", "confort"]
+        },
+        {
+          "id": "saucony",
+          "name": "Saucony",
+          "url": "https://www.saucony.com/",
+          "description": "Endorphin Speed/Pro/Elite sur route, Peregrine et Xodus sur trail.",
+          "tags": ["route", "trail"]
+        },
+        {
+          "id": "altra",
+          "name": "Altra",
+          "url": "https://www.altrarunning.eu/",
+          "description": "Zero drop, toebox large. Culte chez les ultra-traileurs.",
+          "tags": ["trail", "zero-drop"]
+        },
+        {
+          "id": "la-sportiva",
+          "name": "La Sportiva",
+          "url": "https://www.lasportiva.com/",
+          "description": "Trail technique et montagne, chaussures très accrocheuses.",
+          "tags": ["trail", "montagne"]
+        },
+        {
+          "id": "scott",
+          "name": "Scott Running",
+          "url": "https://www.scott-sports.com/",
+          "description": "Kinabalu, Supertrac, Speed Carbon RC. Polyvalent route/trail.",
+          "tags": ["route", "trail"]
+        }
+      ]
+    },
+    {
+      "id": "calendriers",
+      "name": "Calendriers & inscriptions",
+      "icon": "📅",
+      "description": "Trouver une course, comparer les dates, s'inscrire.",
+      "sites": [
+        {
+          "id": "betrail",
+          "name": "Betrail",
+          "url": "https://www.betrail.run/",
+          "description": "Le calendrier de référence trail en Europe, avec cotation ITRA et avis.",
+          "tags": ["trail", "europe", "cotation"]
+        },
+        {
+          "id": "njuko",
+          "name": "Njuko",
+          "url": "https://www.njuko.com/",
+          "description": "Plateforme d'inscription utilisée par beaucoup d'organisateurs.",
+          "tags": ["inscriptions"]
+        },
+        {
+          "id": "klikego",
+          "name": "Klikego",
+          "url": "https://www.klikego.com/",
+          "description": "Calendrier + inscriptions running/trail, large catalogue français.",
+          "tags": ["francais", "inscriptions"]
+        },
+        {
+          "id": "itra",
+          "name": "ITRA",
+          "url": "https://itra.run/",
+          "description": "International Trail Running Association. Cotation des courses, profil coureur.",
+          "tags": ["trail", "cotation", "international"]
+        },
+        {
+          "id": "jaiunecourse",
+          "name": "J'ai une course",
+          "url": "https://www.jaiunecourse.fr/",
+          "description": "Recherche de courses en France par date et région.",
+          "tags": ["francais"]
+        }
+      ]
+    },
+    {
+      "id": "chronometrage",
+      "name": "Chronométreurs",
+      "icon": "⏱️",
+      "description": "Sociétés de chronométrage et plateformes de résultats.",
+      "sites": [
+        {
+          "id": "sport-pro-time",
+          "name": "Sport Pro Time",
+          "url": "https://www.sportprotime.fr/",
+          "description": "Chronométrage électronique, gros volume de courses en France.",
+          "tags": ["francais"]
+        },
+        {
+          "id": "chronospro",
+          "name": "ChronosPro",
+          "url": "https://www.chronospro.fr/",
+          "description": "Chronométrage et résultats live.",
+          "tags": ["francais", "live"]
+        },
+        {
+          "id": "mychrono",
+          "name": "MyChrono",
+          "url": "https://www.mychrono.fr/",
+          "description": "Résultats et classements de nombreuses courses régionales.",
+          "tags": ["francais", "resultats"]
+        },
+        {
+          "id": "livetrail",
+          "name": "LiveTrail",
+          "url": "https://livetrail.net/",
+          "description": "Suivi live des gros trails (UTMB, Diagonale...). Référence sur l'ultra.",
+          "tags": ["trail", "live", "ultra"]
+        }
+      ]
+    },
+    {
+      "id": "voyages",
+      "name": "Voyages trail & running",
+      "icon": "✈️",
+      "description": "Organisateurs qui packagent course + voyage : dossard, hébergement, logistique sur des destinations choisies.",
+      "sites": [
+        {
+          "id": "endorphin-tours",
+          "name": "Endorphin Tours",
+          "url": "https://endorphin.tours/",
+          "description": "Séjours trail et marathon avec encadrement, focus expérience et destinations sportives.",
+          "tags": ["francais", "trail", "marathon"]
+        },
+        {
+          "id": "marathon-tours",
+          "name": "Marathon Tours & Travel",
+          "url": "https://www.marathontours.com/",
+          "description": "Opérateur US historique pour les majors et marathons internationaux (Boston, Tokyo, Antarctica...).",
+          "tags": ["marathon", "majors", "anglais"]
+        },
+        {
+          "id": "albatros",
+          "name": "Albatros Adventure Marathons",
+          "url": "https://www.adventuremarathons.com/",
+          "description": "Marathons sur des destinations extrêmes : Pôle Nord, Grande Muraille, Big Five (Afrique du Sud), Pétra.",
+          "tags": ["aventure", "exotique", "anglais"]
+        },
+        {
+          "id": "sports-tours-international",
+          "name": "Sports Tours International",
+          "url": "https://www.sportstoursinternational.co.uk/",
+          "description": "Voyagiste UK spécialisé majors marathons et événements running internationaux.",
+          "tags": ["marathon", "uk", "anglais"]
+        }
+      ]
+    },
+    {
+      "id": "goodies",
+      "name": "Goodies & fabrication",
+      "icon": "🏅",
+      "description": "Médailles, dossards, t-shirts finisher, trophées pour organisateurs.",
+      "sites": [
+        {
+          "id": "medailles-trophees",
+          "name": "Médailles & Trophées",
+          "url": "https://www.medailles-trophees.com/",
+          "description": "Médailles personnalisées pour courses et événements sportifs.",
+          "tags": ["medailles", "personnalise"]
+        },
+        {
+          "id": "spreadshirt",
+          "name": "Spreadshirt",
+          "url": "https://www.spreadshirt.fr/",
+          "description": "Impression à la demande de t-shirts et textile pour clubs/courses.",
+          "tags": ["textile", "impression"]
+        },
+        {
+          "id": "tshirt-corner",
+          "name": "T-Shirt Corner",
+          "url": "https://www.tshirt-corner.com/",
+          "description": "Personnalisation textile, intéressant pour les clubs.",
+          "tags": ["textile", "club"]
+        },
+        {
+          "id": "trophee-direct",
+          "name": "Trophée Direct",
+          "url": "https://www.trophee-direct.com/",
+          "description": "Trophées, coupes, médailles pour podiums.",
+          "tags": ["trophees", "medailles"]
+        }
+      ]
+    },
+    {
+      "id": "blogs-reviews",
+      "name": "Blogs & reviews matériel",
+      "icon": "🔍",
+      "description": "Tests détaillés de chaussures et de montres GPS par des passionnés et des spécialistes.",
+      "sites": [
+        {
+          "id": "dc-rainmaker",
+          "name": "DC Rainmaker",
+          "url": "https://www.dcrainmaker.com/",
+          "description": "La référence mondiale sur les montres GPS et capteurs sportifs. Reviews très techniques et exhaustives.",
+          "tags": ["gps", "tech", "anglais"]
+        },
+        {
+          "id": "running-addict",
+          "name": "Running Addict",
+          "url": "https://running-addict.fr/",
+          "description": "Blog français de Nicolas Pratx : tests matériel, conseils d'entraînement, contenus très accessibles.",
+          "tags": ["francais", "matos", "entrainement"]
+        },
+        {
+          "id": "believe-in-the-run",
+          "name": "Believe in the Run",
+          "url": "https://believeintherun.com/",
+          "description": "Reviews chaussures route et trail très réactives, écriture vivante.",
+          "tags": ["chaussures", "anglais"]
+        },
+        {
+          "id": "doctors-of-running",
+          "name": "Doctors of Running",
+          "url": "https://www.doctorsofrunning.com/",
+          "description": "Reviews de chaussures écrites par des kinés/podologues, angle biomécanique.",
+          "tags": ["chaussures", "biomeca", "anglais"]
+        },
+        {
+          "id": "ginger-runner",
+          "name": "The Ginger Runner",
+          "url": "https://www.youtube.com/@TheGingerRunner",
+          "description": "Vlog trail/ultra US, tests matériel et reportages de course.",
+          "tags": ["video", "trail", "anglais"]
+        }
+      ]
+    },
+    {
+      "id": "medias",
+      "name": "Médias & presse",
+      "icon": "📰",
+      "description": "Magazines, sites d'actualité et reportages sur la course à pied et le trail.",
+      "sites": [
+        {
+          "id": "jogging-international",
+          "name": "Jogging International",
+          "url": "https://www.jogging-international.net/",
+          "description": "Le magazine français historique de la course à pied. Reportages, plans, tests.",
+          "tags": ["francais", "magazine"]
+        },
+        {
+          "id": "wider",
+          "name": "Wider Magazine",
+          "url": "https://wider-mag.fr/",
+          "description": "Magazine trail français, beaux portraits et reportages long format.",
+          "tags": ["francais", "trail", "long-format"]
+        },
+        {
+          "id": "trails-endurance",
+          "name": "Trails Endurance Mag",
+          "url": "https://www.trails-endurance.com/",
+          "description": "Magazine trail/ultra français, actu courses et matos.",
+          "tags": ["francais", "trail"]
+        },
+        {
+          "id": "u-run",
+          "name": "U Run",
+          "url": "https://www.u-run.fr/",
+          "description": "Média généraliste running français, tests et actualités.",
+          "tags": ["francais", "generaliste"]
+        },
+        {
+          "id": "irunfar",
+          "name": "iRunFar",
+          "url": "https://www.irunfar.com/",
+          "description": "Référence anglophone sur l'ultra-trail. Live, interviews, reviews.",
+          "tags": ["ultra", "anglais", "live"]
+        },
+        {
+          "id": "esprit-trail",
+          "name": "Esprit Trail",
+          "url": "https://www.esprit-trail.fr/",
+          "description": "Magazine trail français, communauté active.",
+          "tags": ["francais", "trail"]
+        }
+      ]
+    },
+    {
+      "id": "communaute",
+      "name": "Communauté & forums",
+      "icon": "💬",
+      "description": "Endroits où discuter matériel, plans, courses et ressentis avec d'autres coureurs.",
+      "sites": [
+        {
+          "id": "kikourou",
+          "name": "Kikourou",
+          "url": "https://www.kikourou.net/",
+          "description": "Forum français historique. Calendrier de courses, récits, entraide entre coureurs.",
+          "tags": ["francais", "forum", "calendrier"]
+        },
+        {
+          "id": "reddit-trailrunning",
+          "name": "r/trailrunning",
+          "url": "https://www.reddit.com/r/trailrunning/",
+          "description": "Subreddit trail, très actif. Conseils matos, récits de course, photos.",
+          "tags": ["reddit", "trail", "anglais"]
+        },
+        {
+          "id": "reddit-running",
+          "name": "r/running",
+          "url": "https://www.reddit.com/r/running/",
+          "description": "Le plus gros subreddit running. FAQ excellente pour débuter.",
+          "tags": ["reddit", "generaliste", "anglais"]
+        },
+        {
+          "id": "reddit-advancedrunning",
+          "name": "r/AdvancedRunning",
+          "url": "https://www.reddit.com/r/AdvancedRunning/",
+          "description": "Subreddit pour coureurs intermédiaires/avancés : plans, allures, compétition.",
+          "tags": ["reddit", "performance", "anglais"]
+        },
+        {
+          "id": "letsrun",
+          "name": "LetsRun",
+          "url": "https://www.letsrun.com/",
+          "description": "Forum US historique, ambiance brute mais beaucoup d'expertise sur l'élite et la perf.",
+          "tags": ["forum", "performance", "anglais"]
+        }
+      ]
+    },
+    {
+      "id": "entrainement",
+      "name": "Entraînement & data",
+      "icon": "📊",
+      "description": "Plans d'entraînement, suivi de l'activité, communautés.",
+      "sites": [
+        {
+          "id": "strava",
+          "name": "Strava",
+          "url": "https://www.strava.com/",
+          "description": "Le réseau social du sport. Segments, suivi GPS, comparaison.",
+          "tags": ["social", "gps"]
+        },
+        {
+          "id": "garmin-connect",
+          "name": "Garmin Connect",
+          "url": "https://connect.garmin.com/",
+          "description": "Suivi détaillé pour utilisateurs de montres Garmin.",
+          "tags": ["gps", "donnees"]
+        },
+        {
+          "id": "campus-coach",
+          "name": "Campus Coach",
+          "url": "https://www.campuscoach.fr/",
+          "description": "Plans d'entraînement personnalisés running/trail.",
+          "tags": ["plans", "francais"]
+        },
+        {
+          "id": "kiprun-coaching",
+          "name": "Kiprun Coaching",
+          "url": "https://www.decathloncoach.com/",
+          "description": "Plans gratuits Decathlon, du 5km au marathon.",
+          "tags": ["plans", "gratuit"]
+        }
+      ]
+    }
+  ]
+}
