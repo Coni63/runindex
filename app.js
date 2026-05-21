@@ -10,6 +10,13 @@
     if (!res.ok) throw new Error('data.json introuvable');
     DATA = await res.json();
     document.title = DATA.site.title;
+    applySiteChrome();
+  }
+
+  function applySiteChrome() {
+    document.querySelectorAll('[data-bind="repoUrl"]').forEach(a => {
+      if (DATA.site.repoUrl) a.href = DATA.site.repoUrl;
+    });
   }
 
   // ---- template helpers ----
