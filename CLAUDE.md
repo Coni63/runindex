@@ -59,7 +59,7 @@ Les `id` doivent rester stables : ils servent d'URL (`#/c/<cat>/`, `#/site/<cat>
 
 - **Home limit** : constante `HOME_LIMIT = 6` dans `app.js`. Au-delà, les lignes excédentaires reçoivent la classe `.extra` (cachées par CSS) et un bouton `Voir plus (N) / Voir moins` est injecté.
 - **Recherche** : input dans le header, debounced 200 ms, match sur `name + description + tags + nom de catégorie`.
-- **Layout home** : `grid-template-columns: repeat(auto-fit, minmax(420px, 1fr))` — 2 colonnes desktop, 1 colonne mobile, breakpoint naturel.
+- **Layout home** : masonry vertical en CSS columns (`column-width: 380px` sur `.categories-layout`, `break-inside: avoid` sur `.category-panel`). Les panneaux remplissent la colonne du haut vers le bas sans aligner les hauteurs ; le nombre de colonnes s'adapte tout seul à la largeur de l'écran. `.container` est élargi à 1800px pour la home, les autres vues (hero, breadcrumb, catégorie isolée, détail site, recherche) sont contraintes à 960px pour rester lisibles.
 
 ## Catégories actuelles
 
