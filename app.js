@@ -59,7 +59,7 @@
 
       const list = bind(panel, 'sites');
       cat.sites.forEach((site, idx) => {
-        const row = siteRow(site, idx + 1, cat.id);
+        const row = siteRow(site, idx + 1);
         if (idx >= HOME_LIMIT) row.querySelector('.site-row').classList.add('extra');
         list.appendChild(row);
       });
@@ -94,41 +94,20 @@
 
     const list = bind(node, 'sites');
     cat.sites.forEach((site, idx) => {
-      list.appendChild(siteRow(site, idx + 1, cat.id));
+      list.appendChild(siteRow(site, idx + 1));
     });
     return node;
   }
 
-  function siteRow(site, rank, catId) {
+  function siteRow(site, rank) {
     const row = tpl('tpl-site-row');
     bind(row, 'rank').textContent = rank;
-    const nameLink = bind(row, 'detailHref');
-    nameLink.href = `#/site/${catId}/${site.id}`;
-    nameLink.querySelector('span').textContent = site.name;
+    bind(row, 'siteUrl').href = site.url;
+    bind(row, 'siteUrl').querySelector('span').textContent = site.name;
     bind(row, 'description').textContent = site.description || '';
     bind(row, 'tags').appendChild(tagsNode(site.tags));
-    const visit = bind(row, 'url');
-    visit.href = site.url;
+    bind(row, 'url').href = site.url;
     return row;
-  }
-
-  function renderSite(catId, siteId) {
-    const cat = DATA.categories.find(c => c.id === catId);
-    if (!cat) return renderNotFound();
-    const idx = cat.sites.findIndex(s => s.id === siteId);
-    if (idx < 0) return renderNotFound();
-    const site = cat.sites[idx];
-
-    const node = tpl('tpl-site-detail');
-    node.querySelectorAll('[data-bind="name"]').forEach(n => n.textContent = site.name);
-    node.querySelectorAll('[data-bind="categoryName"]').forEach(n => n.textContent = cat.name);
-    node.querySelectorAll('[data-bind="categoryHref"]').forEach(a => a.href = `#/c/${cat.id}`);
-    bind(node, 'description').textContent = site.description || '';
-    bind(node, 'tags').appendChild(tagsNode(site.tags));
-    const visit = bind(node, 'url');
-    visit.href = site.url;
-    bind(node, 'rank').textContent = `#${idx + 1} dans ${cat.name}`;
-    return node;
   }
 
   function renderSearch(query) {
@@ -145,7 +124,7 @@
     bind(node, 'summary').textContent = `${results.length} résultat(s) pour « ${query} »`;
     const list = bind(node, 'results');
     results.forEach(({ site, cat, rank }) => {
-      list.appendChild(siteRow(site, rank, cat.id));
+      list.appendChild(siteRow(site, rank));
     });
     return node;
   }
@@ -167,8 +146,6 @@
       app.appendChild(renderHome());
     } else if (parts[0] === 'c' && parts[1]) {
       app.appendChild(renderCategory(parts[1]));
-    } else if (parts[0] === 'site' && parts[1] && parts[2]) {
-      app.appendChild(renderSite(parts[1], parts[2]));
     } else if (parts[0] === 'search' && parts[1]) {
       app.appendChild(renderSearch(decodeURIComponent(parts[1])));
     } else {

@@ -71,32 +71,14 @@
     <li class="site-row">
       <span class="rank" data-bind="rank"></span>
       <div class="site-main">
-        <a class="site-name" data-bind="detailHref"><span data-bind="name"></span></a>
+        <a class="site-name" target="_blank" rel="noopener" data-bind="siteUrl"><span data-bind="name"></span></a>
         <p class="site-desc" data-bind="description"></p>
         <div class="tags" data-bind="tags"></div>
       </div>
-      <a class="site-visit" target="_blank" rel="noopener" data-bind="url">Visiter ↗</a>
+      <a class="site-visit" target="_blank" rel="noopener" data-bind="url" aria-label="Visiter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
     </li>
-  </template>
-
-  <template id="tpl-site-detail">
-    <nav class="breadcrumb">
-      <a href="#/">Accueil</a> <span>›</span>
-      <a data-bind="categoryHref"><span data-bind="categoryName"></span></a>
-      <span>›</span> <span data-bind="name"></span>
-    </nav>
-    <article class="site-detail">
-      <header>
-        <h1 data-bind="name"></h1>
-        <a class="site-visit big" target="_blank" rel="noopener" data-bind="url">Visiter le site ↗</a>
-      </header>
-      <p class="lead" data-bind="description"></p>
-      <div class="tags" data-bind="tags"></div>
-      <div class="site-meta">
-        <span>Catégorie : <a data-bind="categoryHref"><span data-bind="categoryName"></span></a></span>
-        <span>Classement : <strong data-bind="rank"></strong></span>
-      </div>
-    </article>
   </template>
 
   <template id="tpl-search-results">
