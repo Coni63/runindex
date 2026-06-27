@@ -2,7 +2,7 @@
 
 L'annuaire du coureur et du traileur — une sélection rangée des meilleurs sites pour la course à pied et le trail : matériel, marques, calendriers, chronométrage, médias, communauté.
 
-Site en ligne : [runindex.fr](https://runindex.fr) (à venir)
+Site en ligne : [https://coni63.github.io/runindex/](https://coni63.github.io/runindex/) 
 
 ## Contribuer
 

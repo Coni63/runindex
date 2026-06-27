@@ -281,17 +281,23 @@ main { padding: 2rem 1.25rem 4rem; min-height: 70vh; }
 }
 .site-meta a { color: var(--accent); text-decoration: none; }
 
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 1.25rem;
-  color: var(--fg-dim);
-  font-size: 0.85rem;
-  text-align: center;
-}
-.site-footer code {
+.contribute-fab {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
   background: var(--bg-elev);
-  padding: 0.1rem 0.4rem;
-  border-radius: 4px;
+  color: var(--fg-dim);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+  z-index: 100;
+}
+.contribute-fab:hover {
+  color: var(--fg);
+  border-color: var(--fg-dim);
 }
 
 @media (max-width: 600px) {
