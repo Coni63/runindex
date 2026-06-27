@@ -17,35 +17,28 @@
           "name": "i-Run",
           "url": "https://www.i-run.fr/",
           "description": "Spécialiste running/trail français, très bon catalogue chaussures et textile, livraison rapide.",
-          "tags": ["specialiste", "francais", "livraison-rapide"]
-        },
-        {
-          "id": "snowleader",
-          "name": "Snowleader",
-          "url": "https://www.snowleader.com/",
-          "description": "Outdoor pointu, bon stock trail (chaussures, sacs, textile technique).",
-          "tags": ["outdoor", "francais"]
+          "tags": ["specialiste", "route", "trail"]
         },
         {
           "id": "decathlon",
           "name": "Decathlon",
           "url": "https://www.decathlon.fr/",
           "description": "Le généraliste incontournable. Gamme Kiprun/Evadict très correcte pour démarrer.",
-          "tags": ["generaliste", "francais", "entree-de-gamme"]
+          "tags": ["generaliste", "route", "trail"]
+        },
+        {
+          "id": "snowleader",
+          "name": "Snowleader",
+          "url": "https://www.snowleader.com/",
+          "description": "Outdoor pointu, bon stock trail (chaussures, sacs, textile technique).",
+          "tags": ["generaliste", "route", "trail"]
         },
         {
           "id": "alltricks",
           "name": "Alltricks",
           "url": "https://www.alltricks.fr/",
           "description": "Multi-sport outdoor, bons prix en promo sur les chaussures de trail.",
-          "tags": ["multi-sport", "promos"]
-        },
-        {
-          "id": "trail-session-shop",
-          "name": "Trail Session Shop",
-          "url": "https://www.trail-session-shop.com/",
-          "description": "Boutique 100% trail tenue par des passionnés.",
-          "tags": ["specialiste", "trail"]
+          "tags": ["generaliste", "route", "trail"]
         }
       ]
     },
@@ -60,63 +53,56 @@
           "name": "Salomon",
           "url": "https://www.salomon.com/",
           "description": "Référence trail : S/Lab, Speedcross, Sense Ride, Genesis...",
-          "tags": ["trail", "francais"]
+          "tags": ["specialiste", "trail"]
         },
         {
           "id": "hoka",
           "name": "HOKA",
           "url": "https://www.hoka.com/",
           "description": "Chaussures à amorti maximaliste, très populaires sur route et trail (Speedgoat, Mafate).",
-          "tags": ["amorti", "route", "trail"]
+          "tags": ["specialiste", "route", "trail"]
         },
         {
           "id": "on",
           "name": "On Running",
           "url": "https://www.on.com/",
           "description": "Marque suisse, technologie CloudTec. Cloudmonster, Cloudultra côté trail.",
-          "tags": ["route", "trail", "suisse"]
+          "tags": ["generaliste", "route", "trail"]
         },
         {
           "id": "nike",
           "name": "Nike Running",
           "url": "https://www.nike.com/fr/running",
           "description": "Vaporfly, Alphafly, Pegasus... la référence sur les chaussures carbone route.",
-          "tags": ["route", "carbone"]
+          "tags": ["generaliste", "route"]
         },
         {
           "id": "asics",
           "name": "ASICS",
           "url": "https://www.asics.com/",
           "description": "Gel-Nimbus, Novablast, Metaspeed. Très solide sur le confort route.",
-          "tags": ["route", "confort"]
+          "tags": ["generaliste", "route", "trail"]
         },
         {
           "id": "saucony",
           "name": "Saucony",
           "url": "https://www.saucony.com/",
           "description": "Endorphin Speed/Pro/Elite sur route, Peregrine et Xodus sur trail.",
-          "tags": ["route", "trail"]
+          "tags": ["specialiste", "route", "trail"]
         },
         {
           "id": "altra",
           "name": "Altra",
-          "url": "https://www.altrarunning.eu/",
+          "url": "https://eu.altrarunning.com/fr-fr",
           "description": "Zero drop, toebox large. Culte chez les ultra-traileurs.",
-          "tags": ["trail", "zero-drop"]
+          "tags": ["specialiste", "route", "trail"]
         },
         {
-          "id": "la-sportiva",
-          "name": "La Sportiva",
-          "url": "https://www.lasportiva.com/",
-          "description": "Trail technique et montagne, chaussures très accrocheuses.",
-          "tags": ["trail", "montagne"]
-        },
-        {
-          "id": "scott",
-          "name": "Scott Running",
-          "url": "https://www.scott-sports.com/",
-          "description": "Kinabalu, Supertrac, Speed Carbon RC. Polyvalent route/trail.",
-          "tags": ["route", "trail"]
+          "id": "nnormal",
+          "name": "NNormal",
+          "url": "https://www.nnormal.com/fr_FR",
+          "description": "La marque emblématique de Kilian Jornet. Concu pour durer",
+          "tags": ["specialiste", "trail"]
         }
       ]
     },
@@ -127,39 +113,53 @@
       "description": "Trouver une course, comparer les dates, s'inscrire.",
       "sites": [
         {
+          "id": "gotrail",
+          "name": "GoTrail",
+          "url": "https://www.gotrail.run/",
+          "description": "Le calendrier de référence trail en Europe, proposé par la communauté. Majoritairement France, Luxembourg et Belgique",
+          "tags": ["trail", "communautaire"]
+        },
+        {
           "id": "betrail",
           "name": "Betrail",
           "url": "https://www.betrail.run/",
           "description": "Le calendrier de référence trail en Europe, avec cotation ITRA et avis.",
-          "tags": ["trail", "europe", "cotation"]
+          "tags": ["international", "trail"]
         },
         {
-          "id": "njuko",
-          "name": "Njuko",
-          "url": "https://www.njuko.com/",
-          "description": "Plateforme d'inscription utilisée par beaucoup d'organisateurs.",
-          "tags": ["inscriptions"]
+          "id": "finishers",
+          "name": "Finishers",
+          "url": "https://www.finishers.com/map",
+          "description": "",
+          "tags": ["international", "trail", "route"]
         },
         {
           "id": "klikego",
           "name": "Klikego",
           "url": "https://www.klikego.com/",
           "description": "Calendrier + inscriptions running/trail, large catalogue français.",
-          "tags": ["francais", "inscriptions"]
+          "tags": ["trail"]
         },
         {
           "id": "itra",
           "name": "ITRA",
           "url": "https://itra.run/",
           "description": "International Trail Running Association. Cotation des courses, profil coureur.",
-          "tags": ["trail", "cotation", "international"]
+          "tags": ["trail", "international"]
         },
         {
-          "id": "jaiunecourse",
-          "name": "J'ai une course",
-          "url": "https://www.jaiunecourse.fr/",
-          "description": "Recherche de courses en France par date et région.",
-          "tags": ["francais"]
+          "id": "chiplauf",
+          "name": "Chiplauf",
+          "url": "https://www.chiplauf.de/fr/",
+          "description": "Course et trail en Allemagne et Luxembourg",
+          "tags": ["trail", "international"]
+        },
+        {
+          "id": "nextrun",
+          "name": "NextRUN",
+          "url": "https://nextrun.fr/",
+          "description": "Site des courses, surtout en bretagne",
+          "tags": ["trail", "route"]
         }
       ]
     },
@@ -170,32 +170,67 @@
       "description": "Sociétés de chronométrage et plateformes de résultats.",
       "sites": [
         {
-          "id": "sport-pro-time",
-          "name": "Sport Pro Time",
-          "url": "https://www.sportprotime.fr/",
+          "id": "gotiming",
+          "name": "GoTiming",
+          "url": "https://gotiming.fr/",
+          "description": "Acteur important français pour les inscriptions et le calendrier des courses.",
+          "tags": ["chronometrage", "inscriptions"]
+        },
+        {
+          "id": "sport-pro",
+          "name": "Sport Pro",
+          "url": "https://www.sportpro.re/",
           "description": "Chronométrage électronique, gros volume de courses en France.",
           "tags": ["francais"]
         },
         {
+          "id": "chronometrage-com",
+          "name": "Chronométrage.com",
+          "url": "https://chronometrage.com/",
+          "description": "Solution majeure de chronométrage et d'inscriptions en France (DAG System).",
+          "tags": ["francais", "inscriptions", "resultats"]
+        },
+        {
+          "id": "ultratiming",
+          "name": "Ultratiming",
+          "url": "https://www.ultratiming.live/",
+          "description": "Chronométrage et inscriptions pour de nombreux trails et joggings en Belgique/Luxembourg.",
+          "tags": ["belge", "luxembourg", "inscriptions", "resultats"]
+        },
+        {
           "id": "chronospro",
           "name": "ChronosPro",
-          "url": "https://www.chronospro.fr/",
+          "url": "https://chronopro.net/",
           "description": "Chronométrage et résultats live.",
           "tags": ["francais", "live"]
         },
         {
-          "id": "mychrono",
-          "name": "MyChrono",
-          "url": "https://www.mychrono.fr/",
-          "description": "Résultats et classements de nombreuses courses régionales.",
-          "tags": ["francais", "resultats"]
+          "id": "njuko",
+          "name": "Njuko",
+          "url": "https://www.njuko.com/",
+          "description": "Plateforme d'inscription utilisée par beaucoup d'organisateurs.",
+          "tags": ["inscriptions"]
+        },
+        {
+          "id": "mchrono",
+          "name": "M-Chrono",
+          "url": "https://www.m-chrono.fr/inscription-en-ligne",
+          "description": "Chronométrage surtout orienté vtt, triathlon et course a pied",
+          "tags": ["generaliste", "resultats"]
         },
         {
           "id": "livetrail",
           "name": "LiveTrail",
           "url": "https://livetrail.net/",
           "description": "Suivi live des gros trails (UTMB, Diagonale...). Référence sur l'ultra.",
-          "tags": ["trail", "live", "ultra"]
+          "tags": ["trail", "live"]
+        },
+        {
+          "id": "chronorace",
+          "name": "ChronoRace",
+          "url": "https://www.chronorace.be/",
+          "description": "Le leader du chronométrage et des résultats en Belgique et au Luxembourg.",
+          "tags": ["belge", "luxembourg", "live", "resultats"]
         }
       ]
     },
@@ -215,21 +250,21 @@
         {
           "id": "marathon-tours",
           "name": "Marathon Tours & Travel",
-          "url": "https://www.marathontours.com/",
+          "url": "https://marathontours.com/en-us/",
           "description": "Opérateur US historique pour les majors et marathons internationaux (Boston, Tokyo, Antarctica...).",
           "tags": ["marathon", "majors", "anglais"]
         },
         {
           "id": "albatros",
           "name": "Albatros Adventure Marathons",
-          "url": "https://www.adventuremarathons.com/",
+          "url": "https://albatros-adventure-marathons.com/",
           "description": "Marathons sur des destinations extrêmes : Pôle Nord, Grande Muraille, Big Five (Afrique du Sud), Pétra.",
           "tags": ["aventure", "exotique", "anglais"]
         },
         {
           "id": "sports-tours-international",
           "name": "Sports Tours International",
-          "url": "https://www.sportstoursinternational.co.uk/",
+          "url": "https://sportstoursinternational.fr/",
           "description": "Voyagiste UK spécialisé majors marathons et événements running internationaux.",
           "tags": ["marathon", "uk", "anglais"]
         }
@@ -321,6 +356,13 @@
       "description": "Magazines, sites d'actualité et reportages sur la course à pied et le trail.",
       "sites": [
         {
+          "id": "puls",
+          "name": "Püls Agency",
+          "url": "https://www.puls-agency.com/",
+          "description": "Un blog orienté trail et tests de matériel",
+          "tags": ["specialiste", "trail", "blogs", "tests"]
+        },
+        {
           "id": "jogging-international",
           "name": "Jogging International",
           "url": "https://www.jogging-international.net/",
@@ -363,6 +405,13 @@
           "tags": ["francais", "trail"]
         }
       ]
+    },
+    {
+      "id": "podcasts",
+      "name": "Podcasts",
+      "icon": "🎙️",
+      "description": "Podcasts sur la course a pied. Parfait pour vos sorties longues...",
+      "sites": []
     },
     {
       "id": "communaute",
