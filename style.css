@@ -86,8 +86,10 @@ main { padding: 2rem 1.25rem 4rem; min-height: 70vh; }
 .intro { color: var(--fg-dim); max-width: 65ch; }
 
 .categories-layout {
-  column-width: 380px;
-  column-gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 1.25rem;
+  align-items: start;
 }
 
 .category-panel {
@@ -95,10 +97,6 @@ main { padding: 2rem 1.25rem 4rem; min-height: 70vh; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  break-inside: avoid;
-  page-break-inside: avoid;
-  margin-bottom: 1.25rem;
-  width: 100%;
 }
 
 .panel-header {

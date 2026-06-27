@@ -1,7 +1,7 @@
 (() => {
   const app = document.getElementById('app');
   const searchInput = document.getElementById('search');
-  const HOME_LIMIT = 6;
+  const HOME_LIMIT = 5;
   let DATA = null;
 
   // ---- data loading ----
