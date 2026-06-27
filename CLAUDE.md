@@ -1,8 +1,6 @@
-# RunIndex
+# Run Catalog
 
-Annuaire de sites pour la course à pied et le trail. SPA statique, données en JSON commit dans le repo, déploiement prévu sur GitHub Pages (domaine cible : `runindex.fr`).
-
-Le répertoire local s'appelle encore `the-trail-dude/` — c'était le nom de travail initial, abandonné pour cause de collision avec un site adulte. **Le nom de marque est RunIndex**, à utiliser partout dans le produit.
+Annuaire de sites pour la course à pied et le trail. SPA statique, données en JSON commit dans le repo, déploiement prévu sur GitHub Pages (domaine cible : `Run Catalog.fr`).
 
 ## Stack
 

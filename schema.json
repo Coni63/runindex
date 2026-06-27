@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "RunIndex data",
+  "title": "Run Catalog data",
   "type": "object",
   "additionalProperties": false,
   "required": ["site", "categories"],

@@ -1,4 +1,4 @@
-# RunIndex
+# Run Catalog
 
 L'annuaire du coureur et du traileur — une sélection rangée des meilleurs sites pour la course à pied et le trail : matériel, marques, calendriers, chronométrage, médias, communauté.
 
