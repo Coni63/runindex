@@ -232,15 +232,35 @@ main { padding: 2rem 1.25rem 4rem; min-height: 70vh; }
 .site-name:hover { color: var(--accent); }
 .site-desc { margin: 0.2rem 0 0.4rem; color: var(--fg-dim); font-size: 0.9rem; }
 
-.tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-.tag {
+.tag-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag-chip {
   background: var(--bg-elev-2);
   color: var(--fg-dim);
-  padding: 0.1rem 0.55rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
   border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
 }
+.tag-chip:hover { color: var(--fg); border-color: var(--fg-dim); }
+.tag-chip.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.site-row.tag-hidden { display: none !important; }
+.category-panel.tag-empty { display: none; }
+.category-panel.tag-filtered .site-row.extra { display: grid; }
+.category-panel.tag-filtered .see-more { display: none; }
 
 .site-visit {
   background: var(--accent);

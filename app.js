@@ -28,18 +28,22 @@
     return node.querySelector(`[data-bind="${key}"]`);
   }
 
-  function tagsNode(tags = []) {
-    const frag = document.createDocumentFragment();
-    tags.forEach(t => {
-      const span = document.createElement('span');
-      span.className = 'tag';
-      span.textContent = t;
-      frag.appendChild(span);
+  // ---- views ----
+  function applyTagFilter(layout, activeTags) {
+    layout.querySelectorAll('.category-panel').forEach(panel => {
+      const rows = panel.querySelectorAll('.site-row');
+      let visible = 0;
+      rows.forEach(row => {
+        const match = activeTags.size === 0 ||
+          (row.dataset.tags || '').split(' ').filter(Boolean).some(t => activeTags.has(t));
+        row.classList.toggle('tag-hidden', !match);
+        if (match) visible++;
+      });
+      panel.classList.toggle('tag-empty', activeTags.size > 0 && visible === 0);
+      panel.classList.toggle('tag-filtered', activeTags.size > 0);
     });
-    return frag;
   }
 
-  // ---- views ----
   function renderHome() {
     const node = tpl('tpl-home');
     bind(node, 'title').textContent = DATA.site.title;
@@ -79,6 +83,32 @@
 
       layout.appendChild(panel);
     });
+
+    // tag filter bar
+    const activeTags = new Set();
+    const allTags = [];
+    const seen = new Set();
+    DATA.categories.forEach(cat =>
+      cat.sites.forEach(site =>
+        (site.tags || []).forEach(t => { if (!seen.has(t)) { seen.add(t); allTags.push(t); } })
+      )
+    );
+    allTags.sort();
+
+    const filterBar = bind(node, 'tagFilter');
+    allTags.forEach(t => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'tag-chip';
+      btn.textContent = t;
+      btn.addEventListener('click', () => {
+        if (activeTags.has(t)) { activeTags.delete(t); btn.classList.remove('active'); }
+        else { activeTags.add(t); btn.classList.add('active'); }
+        applyTagFilter(layout, activeTags);
+      });
+      filterBar.appendChild(btn);
+    });
+
     return node;
   }
 
@@ -105,8 +135,8 @@
     bind(row, 'siteUrl').href = site.url;
     bind(row, 'siteUrl').querySelector('span').textContent = site.name;
     bind(row, 'description').textContent = site.description || '';
-    bind(row, 'tags').appendChild(tagsNode(site.tags));
     bind(row, 'url').href = site.url;
+    row.querySelector('.site-row').dataset.tags = (site.tags || []).join(' ');
     return row;
   }
 

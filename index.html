@@ -29,6 +29,7 @@
       <p class="tagline" data-bind="tagline"></p>
       <p class="intro" data-bind="intro"></p>
     </section>
+    <div class="tag-filter-bar" data-bind="tagFilter"></div>
     <section class="categories-layout" data-bind="categories"></section>
   </template>
 
@@ -66,7 +67,6 @@
       <div class="site-main">
         <a class="site-name" target="_blank" rel="noopener" data-bind="siteUrl"><span data-bind="name"></span></a>
         <p class="site-desc" data-bind="description"></p>
-        <div class="tags" data-bind="tags"></div>
       </div>
       <a class="site-visit" target="_blank" rel="noopener" data-bind="url" aria-label="Visiter">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
